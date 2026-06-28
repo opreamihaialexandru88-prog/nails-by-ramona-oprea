@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 <head>
 
     <meta charset="UTF-8">
@@ -149,59 +149,67 @@
 
 
 
-    <!-- ==========================================
+  <!-- ==========================================
                     GALERIE
-    =========================================== -->
+=========================================== -->
 
-    <section class="gallery" id="galerie">
+<section class="gallery" id="galerie">
 
-        <div class="container">
+    <div class="container">
 
-            <h2>
+        <h2>
 
-                Galerie
+            Galerie
 
-                <span>Lucrări realizate în salon</span>
+            <span>Lucrări realizate în salon</span>
 
-            </h2>
+        </h2>
 
-            <div class="gold-line"></div>
+        <div class="gold-line"></div>
 
-            <div class="gallery-grid">
+        <div class="gallery-grid">
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery1.webp" alt="">
-                </div>
+            <div class="gallery-item">
+                <a href="images/gallery/gallery1.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery1.webp" alt="Manichiură 1">
+                </a>
+            </div>
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery2.webp" alt="">
-                </div>
+            <div class="gallery-item">
+                <a href="images/gallery/gallery2.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery2.webp" alt="Manichiură 2">
+                </a>
+            </div>
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery3.webp" alt="">
-                </div>
+            <div class="gallery-item">
+                <a href="images/gallery/gallery3.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery3.webp" alt="Manichiură 3">
+                </a>
+            </div>
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery4.webp" alt="">
-                </div>
+            <div class="gallery-item">
+                <a href="images/gallery/gallery4.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery4.webp" alt="Manichiură 4">
+                </a>
+            </div>
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery5.webp" alt="">
-                </div>
+            <div class="gallery-item">
+                <a href="images/gallery/gallery5.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery5.webp" alt="Manichiură 5">
+                </a>
+            </div>
 
-                <div class="gallery-item">
-                    <img src="images/gallery/gallery6.webp" alt="">
-                </div>
-
+            <div class="gallery-item">
+                <a href="images/gallery/gallery6.webp" class="glightbox" data-gallery="ramona">
+                    <img src="images/gallery/gallery6.webp" alt="Manichiură 6">
+                </a>
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-
-
-
+</section>
 <!-- ==========================================
                 SERVICII
 ========================================== -->
@@ -420,7 +428,17 @@
 
 
     <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    draggable: true
+});
+</script>
 </body>
 
 </html>
